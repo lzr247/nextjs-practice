@@ -1,7 +1,12 @@
 "use client";
-import { CustomButtonProps } from  "../types/index";
+import { CustomButtonProps } from "../types/index";
 
-const CustomButton = ({ title, containerStyles, handleClick, btnType }: CustomButtonProps) => {
+const CustomButton = ({
+  title,
+  containerStyles,
+  handleClick,
+  btnType,
+}: CustomButtonProps) => {
   return (
     <button
       disabled={false}
@@ -9,11 +14,9 @@ const CustomButton = ({ title, containerStyles, handleClick, btnType }: CustomBu
       className={`custom-btn ${containerStyles}`}
       onClick={handleClick}
     >
-      <span className={`flex-1`}>
-        {title}
-      </span>
+      <span className={`flex-1`}>{title}</span>
     </button>
-  )
-}
+  );
+};
 
-export default CustomButton
+export default CustomButton;
