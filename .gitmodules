@@ -1,0 +1,3 @@
+[submodule "anime_vault"]
+	path = anime_vault
+	url = ./anime_vault
